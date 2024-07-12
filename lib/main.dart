@@ -3,6 +3,7 @@ import 'package:webpricol/utils/colors.dart';
 import 'home/ui/home_screen.dart';
 
 void main() async {
+
   runApp(const MyApp());
 }
 

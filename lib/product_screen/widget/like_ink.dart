@@ -24,7 +24,8 @@ class _FavoriteButtonState extends State<FavoriteButton> {
   Widget build(BuildContext context) {
     final TextStyle effectiveStyle = widget.style ?? AppTypography.font16w400;
 
-    return GestureDetector(
+    return InkWell(
+      splashColor: isFavorite? AppColors.grey : Colors.red,
       onTap: () {
         setState(() {
           isFavorite = !isFavorite;
